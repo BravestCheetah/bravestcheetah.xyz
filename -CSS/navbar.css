@@ -1,0 +1,72 @@
+@media screen and (max-width: 800px) {
+    .AboutMe-nav, .Projects-nav, .OtherStuff-nav {
+        opacity: 0;
+        pointer-events: none;
+        
+    }
+
+}
+  
+a {
+    text-decoration: none;
+    color: lightgrey;
+    padding: 5px;
+}
+  
+.navbar-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50px;
+}
+
+  
+.navbar {
+    transform: translateY(10px);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  
+    font-family: Helvetica, sans-serif;
+    width: 95%;
+    background-color: rgba(17, 17, 17, 1);
+    color: lightgrey;
+    font-size: 1.5em;
+    border-radius: 10px;
+    height: 50px;
+    padding: 10px;
+}
+  
+.logoimg {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+  
+.logo { grid-area: 1 / 1 / 2 / 3; }
+  
+.AboutMe-nav { grid-area: 1 / 4 / 2 / 5; }
+  
+.Projects-nav { grid-area: 1 / 5 / 2 / 6; }
+  
+.OtherStuff-nav { grid-area: 1 / 6 / 2 / 7; }
+  
+.AboutMe-nav,
+.Projects-nav,
+.OtherStuff-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
