@@ -1,2 +1,2 @@
-# bravestcheetah.xyz
+# https://bravestcheetah.xyz
  A website by me, for me
