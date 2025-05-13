@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub OAuth</title>
+    <script>
+      const client_id = 'Ov23liZOaDKjpu5pm5RA';
+      const scope = 'repo';
+
+      fetch('https://github.com/login/device/code', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `client_id=${client_id}&scope=${scope}`
+      })
+      .then(res => res.json())
+      .then(data => {
+        document.body.innerHTML = `
+          <h2>Authorize Netlify CMS</h2>
+          <p>Go to <a href="https://github.com/login/device" target="_blank">github.com/login/device</a> and enter this code:</p>
+          <h1>${data.user_code}</h1>
+          <p>Then return here and Netlify CMS will continue.</p>
+        `;
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Authorizing...</h2>
+  </body>
+</html>
