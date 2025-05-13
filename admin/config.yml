@@ -2,6 +2,8 @@ backend:
   name: github
   repo: BravestCheetah/bravestcheetah.xyz
   branch: main
+  base_url: https://bravestcheetah.xyz
+  auth_endpoint: /admin/auth.html
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
