@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: BravestCheetah/bravestcheetah.xyz
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "rawpost"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Filename", name: "slug", widget: "string", required: true, hint: "Used as URL ID for ?id=..." }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
