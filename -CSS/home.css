@@ -140,7 +140,7 @@ hr {
 .project-card {
   width: 25%;
   height: 250px;
-  border: 8px solid rgba(25, 25, 25, 1);
+  border: 2px solid rgba(0, 0, 0, 1);
   border-radius: 20px;
   color: lightgray;
   display: flex;
