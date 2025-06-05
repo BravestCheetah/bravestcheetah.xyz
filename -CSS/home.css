@@ -199,31 +199,6 @@ hr {
   background: linear-gradient(153deg, rgba(170,0,163,.4) 24%, rgba(0,147,177,.4) 92%);
 }
 
-.yellow-gray {
-  background: rgb(88,87,0);
-  background: linear-gradient(153deg, rgba(88,87,0,1) 24%, rgba(10,3,10,1) 92%);
-}
-
-.darkgreen-green {
-  background: rgb(1,46,1);
-  background: linear-gradient(153deg, rgba(1,46,1,1) 2%, rgba(20,149,0,1) 92%);
-}
-
-.purple-gray {
-  background: rgb(132,2,161);
-  background: linear-gradient(153deg, rgba(132,2,161,1) 0%, rgba(10,3,10,1) 100%);
-}
-
-.green-gray {
-  background: rgb(3,107,11);
-  background: linear-gradient(153deg, rgba(3,107,11,1) 0%, rgba(10,3,10,1) 100%);
-}
-
-.blue-gray {
-  background: rgb(3,5,176);
-  background: linear-gradient(153deg, rgba(3,5,176,1) 0%, rgba(10,3,10,1) 100%);
-}
-
 h2 {
   text-align: center;
   color: lightgray;
