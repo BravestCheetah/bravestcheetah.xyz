@@ -24,25 +24,17 @@ html, body {
 
 
 .fancytext {
-    background: rgb(255,0,211);
-    background: linear-gradient(120deg, rgba(255,0,211,1) 0%, rgba(0,121,255,1) 100%);
+    background: linear-gradient(90deg, #ED53D1, #4221FF, #ED53D1);
     background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+            background-clip: text;
     color: transparent;
-    background-clip: text;
-    background-position: left;
-    animation: pan-gradient 5s linear infinite;
-  }
-  @keyframes pan-gradient {
-    0% {
-      background-position: 0% 0%;
-    }
-    50% {
-      background-position: 100% 0%;
-    }
-    100% {
-      background-position: 0% 0%;
-    }
+    animation: shimmer 2s linear infinite;
 }
+
+
+@keyframes shimmer { to { background-position: 100% } }
 
 .CatchPhrase {
     background-color: rgba(17, 17, 17,.8);
